@@ -17,12 +17,12 @@ export default function CoursesPage() {
 
   return (
     <>
-      <Seo title="Courses at WaynesTTI" description="Explore the practical courses offered by Waynes Technical Training Institute across technical, ICT, beauty and hospitality fields." />
+      <Seo title="Courses at WynesTTI" description="Explore the practical courses offered by Wynes Technical Training Institute across technical, ICT, beauty and hospitality fields." />
       <PageHero
         kicker="Courses"
         title="Practical programs built for job readiness"
         subtitle="Browse courses designed to give students the hands-on skills needed for employment, self-employment and industry competence."
-        image="https://frankariuki86-png.github.io/waynes-institute/photos/OIP%20(92).jpeg"
+        image="/wynes%20photos/gallerly4.jpeg"
         actions={[
           <a key="apply" href="/admissions" className="btn-primary">Apply Now</a>,
           <a key="contact" href="/contact" className="btn-secondary">Ask About a Course</a>,

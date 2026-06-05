@@ -25,13 +25,13 @@ function HomeHero() {
   return (
     <section className="relative isolate overflow-hidden bg-hero-grid pt-28 text-white">
       <div className="absolute inset-0">
-        <motion.img
+          <motion.img
           key={currentSlide}
           initial={{ opacity: 0, scale: 1.04 }}
           animate={{ opacity: 0.42, scale: 1 }}
           transition={{ duration: 0.9 }}
           src={currentSlide}
-          alt="WaynesTTI students"
+          alt="WynesTTI students"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,17,31,0.58)_0%,rgba(7,17,31,0.7)_60%,rgba(7,17,31,0.92)_100%)]" />
@@ -50,7 +50,7 @@ function HomeHero() {
           </div>
           <div className="space-y-6">
             <h1 className="max-w-4xl text-4xl font-black uppercase tracking-tight sm:text-5xl lg:text-7xl">
-              Waynes Technical Training Institute
+              Wynes Technical Training Institute
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
               {siteInfo.tagline}
@@ -112,11 +112,11 @@ function AboutSection() {
   return (
     <section className="bg-white py-20 lg:py-28" id="about">
       <div className="section-shell grid gap-14 lg:grid-cols-2 lg:items-center">
-        <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
+          <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
           <div className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-gold-300/20 blur-2xl" />
-          <img
-            src="https://frankariuki86-png.github.io/waynes-institute/photos/student&ceo.jpeg.jpeg"
-            alt="WaynesTTI students and leadership"
+            <img
+              src="/wynes%20photos/gallerly1.jpeg"
+              alt="WynesTTI students and leadership"
             className="h-[34rem] w-full rounded-[2rem] object-cover shadow-premium"
           />
         </motion.div>
@@ -125,7 +125,7 @@ function AboutSection() {
           <SectionHeading
             kicker="About Us"
             title="A practical institution built around real skills"
-            description="WaynesTTI is focused on hands-on training, creativity, confidence and professional growth. The institute prepares students for the workplace, entrepreneurship and service to community through relevant technical education."
+            description="WynesTTI is focused on hands-on training, creativity, confidence and professional growth. The institute prepares students for the workplace, entrepreneurship and service to community through relevant technical education."
           />
           <div className="mt-8 space-y-5">
             <div className="rounded-3xl bg-slate-50 p-6">
@@ -187,9 +187,9 @@ function WhyChooseSection() {
     <section className="bg-white py-20 lg:py-28">
       <div className="section-shell">
         <SectionHeading
-          kicker="Why Choose WaynesTTI"
+          kicker="Why Choose WynesTTI"
           title="A premium technical institute experience"
-          description="Students and parents need confidence in both the learning environment and the outcomes. WaynesTTI emphasizes practical training, support and growth."
+          description="Students and parents need confidence in both the learning environment and the outcomes. WynesTTI emphasizes practical training, support and growth."
           center
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -218,7 +218,7 @@ function StatsSection() {
         <SectionHeading
           kicker="Achievements"
           title="Growing impact with every cohort"
-          description="A modern institution should show momentum, trust and outcomes. These counters highlight the scale and direction of WaynesTTI’s journey."
+          description="A modern institution should show momentum, trust and outcomes. These counters highlight the scale and direction of WynesTTI’s journey."
           center
           light
         />
@@ -240,7 +240,7 @@ function GallerySection() {
         <SectionHeading
           kicker="Student Life / Gallery"
           title="A glimpse into campus life and practical sessions"
-          description="From workshops to graduation moments, the gallery reflects the active learning culture and welcoming atmosphere at WaynesTTI."
+          description="From workshops to graduation moments, the gallery reflects the active learning culture and welcoming atmosphere at WynesTTI."
           center
         />
         <div className="mt-14 columns-1 gap-5 md:columns-2 xl:columns-3 [column-fill:_balance]">
@@ -270,7 +270,7 @@ function TestimonialsSection() {
       <div className="section-shell">
         <SectionHeading
           kicker="Student Voices"
-          title="What students say about WaynesTTI"
+          title="What students say about WynesTTI"
           description="Testimonials highlight the support, professionalism and hands-on value students experience during training."
           center
         />
@@ -291,7 +291,7 @@ function AdmissionsBanner() {
           <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="section-kicker text-gold-300">Admissions</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Start Your Journey With WaynesTTI Today</h2>
+                <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Start Your Journey With WynesTTI Today</h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
                 Join a practical training environment built to help you gain market-ready skills, confidence and a clear career direction.
               </p>
@@ -319,7 +319,7 @@ function ContactPreview() {
           <SectionHeading
             kicker="Get in Touch"
             title="Ready to speak with admissions?"
-            description="Reach WaynesTTI by phone, email or WhatsApp. The campus is based in Nakuru, Kenya and welcomes enquiries from students and parents."
+            description="Reach WynesTTI by phone, email or WhatsApp. The campus is based in Nakuru, Kenya and welcomes enquiries from students and parents."
           />
           <div className="mt-8 space-y-4">
             <div className="rounded-3xl bg-slate-50 p-5"><Phone className="h-5 w-5 text-gold-500" /> <p className="mt-3 font-medium text-slate-900">{siteInfo.phone}</p></div>
@@ -330,7 +330,7 @@ function ContactPreview() {
 
         <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-premium">
           <iframe
-            title="WaynesTTI map"
+            title="WynesTTI map"
             src="https://www.google.com/maps?q=Nakuru%20Kenya&output=embed"
             className="h-[26rem] w-full border-0"
             loading="lazy"
@@ -345,13 +345,13 @@ function ContactPreview() {
 export default function Home() {
   const pageDescription = useMemo(
     () =>
-      'Waynes Technical Training Institute (WaynesTTI) is a modern, practical and premium learning destination in Nakuru, Kenya for technical, ICT, beauty and hospitality training.',
+      'Wynes Technical Training Institute (WynesTTI) is a modern, practical and premium learning destination in Nakuru, Kenya for technical, ICT, beauty and hospitality training.',
     [],
   );
 
   return (
     <>
-      <Seo title="WaynesTTI | Waynes Technical Training Institute" description={pageDescription} />
+      <Seo title="WynesTTI | Wynes Technical Training Institute" description={pageDescription} />
       <HomeHero />
       <AboutSection />
       <CoursesPreview />

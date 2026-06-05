@@ -8,12 +8,12 @@ import { admissionSteps, faqs, siteInfo } from '../data/siteData';
 export default function AdmissionsPage() {
   return (
     <>
-      <Seo title="Admissions at WaynesTTI" description="Find out how to apply to Waynes Technical Training Institute, what documents are needed and how to contact admissions." />
+      <Seo title="Admissions at WynesTTI" description="Find out how to apply to Wynes Technical Training Institute, what documents are needed and how to contact admissions." />
       <PageHero
         kicker="Admissions"
         title="Start your application with a simple process"
-        subtitle="Use the steps below to begin your journey at WaynesTTI and prepare the documents required for registration."
-        image="https://frankariuki86-png.github.io/waynes-institute/photos/WhatsApp%20Image%202025-09-30%20at%209.46.15%20AM.jpeg"
+        subtitle="Use the steps below to begin your journey at WynesTTI and prepare the documents required for registration."
+        image="/wynes%20photos/gallerly5.jpeg"
         actions={[
           <a key="call" href={`tel:${siteInfo.phoneDigits}`} className="btn-primary">Call Admissions</a>,
           <a key="whatsapp" href={`https://wa.me/${siteInfo.whatsapp}`} className="btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>,
@@ -26,7 +26,7 @@ export default function AdmissionsPage() {
             <SectionHeading
               kicker="How to Apply"
               title="A clear admission journey"
-              description="WaynesTTI’s application process is designed to be simple, supportive and easy to follow for students and parents."
+              description="WynesTTI’s application process is designed to be simple, supportive and easy to follow for students and parents."
             />
             <div className="mt-8 space-y-4">
               {admissionSteps.map((step, index) => (

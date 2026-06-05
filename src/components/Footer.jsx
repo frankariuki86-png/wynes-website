@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="space-y-6">
           <Logo />
           <p className="max-w-md text-sm leading-7 text-slate-300">
-            WaynesTTI delivers practical, industry-relevant training that prepares students for work, enterprise and lifelong growth.
+            WynesTTI delivers practical, industry-relevant training that prepares students for work, enterprise and lifelong growth.
           </p>
           <div className="flex items-center gap-3 text-slate-300">
             <a href={siteInfo.facebook} target="_blank" rel="noreferrer" className="rounded-full border border-white/10 p-3 transition hover:border-gold-400 hover:text-gold-300">
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} Waynes Technical Training Institute. All rights reserved.
+        © {new Date().getFullYear()} Wynes Technical Training Institute. All rights reserved.
       </div>
     </footer>
   );

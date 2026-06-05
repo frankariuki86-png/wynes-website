@@ -1,6 +1,6 @@
 # wynes-website
 
-Waynes Technical Training Institute website built with React, Tailwind CSS, Framer Motion, and React Router DOM.
+Wynes Technical Training Institute website built with React, Tailwind CSS, Framer Motion, and React Router DOM.
 
 ## Run Locally
 

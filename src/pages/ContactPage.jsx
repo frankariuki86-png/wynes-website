@@ -29,12 +29,12 @@ export default function ContactPage() {
 
   return (
     <>
-      <Seo title="Contact WaynesTTI" description="Contact Waynes Technical Training Institute by phone, email, WhatsApp or the enquiry form." />
+      <Seo title="Contact WynesTTI" description="Contact Wynes Technical Training Institute by phone, email, WhatsApp or the enquiry form." />
       <PageHero
         kicker="Contact"
-        title="Speak to WaynesTTI today"
+        title="Speak to WynesTTI today"
         subtitle="Use the form, phone, email or WhatsApp to get admissions support and course guidance."
-        image="https://frankariuki86-png.github.io/waynes-institute/photos/student.jpeg.jpeg"
+        image="/wynes%20photos/gallerly6.jpeg"
       />
 
       <section className="bg-white py-20 lg:py-28">
@@ -58,7 +58,7 @@ export default function ContactPage() {
 
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-premium">
               <iframe
-                title="WaynesTTI location"
+                title="WynesTTI location"
                 src="https://www.google.com/maps?q=Nakuru%20Kenya&output=embed"
                 className="h-[24rem] w-full border-0"
                 loading="lazy"

@@ -8,12 +8,12 @@ import { aboutPoints, siteInfo } from '../data/siteData';
 export default function AboutPage() {
   return (
     <>
-      <Seo title="About WaynesTTI" description="Learn about Waynes Technical Training Institute, its mission, vision and practical training approach." />
+      <Seo title="About WynesTTI" description="Learn about Wynes Technical Training Institute, its mission, vision and practical training approach." />
       <PageHero
         kicker="About Us"
         title="A college built on practical education and student growth"
-        subtitle="WaynesTTI serves students who want professional skills, strong mentorship and training that translates into opportunity."
-        image="https://frankariuki86-png.github.io/waynes-institute/photos/student&ceo.jpeg.jpeg"
+        subtitle="WynesTTI serves students who want professional skills, strong mentorship and training that translates into opportunity."
+        image="/wynes%20photos/gallerly1.jpeg"
         actions={[
           <a key="apply" href="/admissions" className="btn-primary">Apply Now</a>,
           <a key="contact" href="/contact" className="btn-secondary">Contact Us</a>,
@@ -26,8 +26,8 @@ export default function AboutPage() {
             initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            src="https://frankariuki86-png.github.io/waynes-institute/photos/student.jpeg.jpeg"
-            alt="WaynesTTI campus"
+            src="/wynes%20photos/gallerly2.jpeg"
+            alt="WynesTTI campus"
             className="h-[34rem] w-full rounded-[2rem] object-cover shadow-premium"
           />
           <div>

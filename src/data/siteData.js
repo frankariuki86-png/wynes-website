@@ -1,6 +1,6 @@
 export const siteInfo = {
-  name: 'Waynes Technical Training Institute',
-  shortName: 'WaynesTTI',
+  name: 'Wynes Technical Training Institute',
+  shortName: 'WynesTTI',
   tagline: 'Empowering Students With Practical Skills For The Future',
   description:
     'Practical training, industry-relevant courses, experienced trainers and a learning environment built to prepare students for employment, entrepreneurship and lifelong success.',
@@ -23,9 +23,9 @@ export const navigationItems = [
 ];
 
 export const heroSlides = [
-  'https://frankariuki86-png.github.io/waynes-institute/photos/student.jpeg.jpeg',
-  'https://frankariuki86-png.github.io/waynes-institute/photos/WhatsApp%20Image%202025-09-30%20at%209.46.15%20AM.jpeg',
-  'https://frankariuki86-png.github.io/waynes-institute/photos/eltc%20installation.jpeg',
+  '/wynes%20photos/gallery.jpeg',
+  '/wynes%20photos/gallerly1.jpeg',
+  '/wynes%20photos/gallerly2.jpeg',
 ];
 
 export const aboutPoints = [
@@ -39,14 +39,14 @@ export const courses = [
     title: 'Beauty',
     category: 'Beauty',
     duration: '6-12 months',
-    image: 'https://frankariuki86-png.github.io/waynes-institute/photos/cosmetology.jpeg.jpeg',
+    image: '/wynes%20photos/gallerly3.jpeg',
     description: 'Comprehensive beauty and cosmetology training covering hair dressing, beauty therapy, fashion and professional salon services.',
   },
   {
     title: 'ICT',
     category: 'ICT',
     duration: '4-12 months',
-    image: 'https://frankariuki86-png.github.io/waynes-institute/photos/OIP%20(92).jpeg',
+    image: '/wynes%20photos/gallerly4.jpeg',
     description: 'Practical ICT programs including computer packages, basic web design and maintenance focused on employability.',
   },
 ];
@@ -86,49 +86,43 @@ export const stats = [
 ];
 
 export const galleryImages = [
-  {
-    src: 'https://frankariuki86-png.github.io/waynes-institute/photos/student.jpeg.jpeg',
-    alt: 'Student portrait on campus',
-  },
-  {
-    src: 'https://frankariuki86-png.github.io/waynes-institute/photos/OIP%20(92).jpeg',
-    alt: 'Computer training lab',
-  },
-  {
-    src: 'https://frankariuki86-png.github.io/waynes-institute/photos/cosmetology.jpeg.jpeg',
-    alt: 'Beauty and cosmetology training',
-  },
+  { src: '/wynes%20photos/gallerly1.jpeg', alt: 'Campus life' },
+  { src: '/wynes%20photos/gallerly2.jpeg', alt: 'Training lab' },
+  { src: '/wynes%20photos/gallerly3.jpeg', alt: 'Beauty and cosmetology training' },
+  { src: '/wynes%20photos/gallerly4.jpeg', alt: 'Practical workshop' },
+  { src: '/wynes%20photos/gallerly5.jpeg', alt: 'Student projects' },
+  { src: '/wynes%20photos/gallerly6.jpeg', alt: 'Classroom' },
 ];
 
 export const testimonials = [
   {
     name: 'Amina J.',
     course: 'Beauty Therapy',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
+    photo: '/wynes%20photos/testimonial.jpeg',
     quote: 'The environment feels professional and welcoming, and the training is very practical.',
   },
   {
     name: 'Grace N.',
     course: 'Beauty',
-    photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80',
+    photo: '/wynes%20photos/testimonial1.jpeg',
     quote: 'I gained real salon confidence, and every class felt hands-on and career-focused.',
   },
   {
     name: 'Faith M.',
     course: 'Beauty',
-    photo: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80',
-    quote: 'WaynesTTI helped me build discipline, practical beauty skills and a clear path forward.',
+    photo: '/wynes%20photos/testimonial2.jpeg',
+    quote: 'WynesTTI helped me build discipline, practical beauty skills and a clear path forward.',
   },
   {
     name: 'Brian K.',
     course: 'ICT',
-    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    photo: '/wynes%20photos/testimonial3.jpeg',
     quote: 'The ICT training is practical and the support made it easy to learn at a professional pace.',
   },
   {
     name: 'Mercy A.',
     course: 'ICT',
-    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
+    photo: '/wynes%20photos/testimonial.jpeg',
     quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
 ];
@@ -147,7 +141,7 @@ export const faqs = [
   },
   {
     question: 'Do you offer flexible intakes?',
-    answer: 'Yes. WaynesTTI promotes accessible admissions so students can join training at suitable periods across the year.',
+    answer: 'Yes. WynesTTI promotes accessible admissions so students can join training at suitable periods across the year.',
   },
   {
     question: 'How can I contact admissions?',

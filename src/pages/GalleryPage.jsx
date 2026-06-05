@@ -10,12 +10,12 @@ export default function GalleryPage() {
 
   return (
     <>
-      <Seo title="WaynesTTI Gallery" description="See campus life, practical sessions, graduation moments and student activities at Waynes Technical Training Institute." />
+      <Seo title="WynesTTI Gallery" description="See campus life, practical sessions, graduation moments and student activities at Wynes Technical Training Institute." />
       <PageHero
         kicker="Student Life"
         title="Campus energy, practical work and real student moments"
-        subtitle="A visual tour of the classroom, workshop and celebration moments that shape the WaynesTTI experience."
-        image="https://frankariuki86-png.github.io/waynes-institute/photos/eltc%20installation.jpeg"
+        subtitle="A visual tour of the classroom, workshop and celebration moments that shape the WynesTTI experience."
+        image="/wynes%20photos/gallerly7.jpeg"
       />
       <section className="bg-slate-50 py-20 lg:py-28">
         <div className="section-shell">
