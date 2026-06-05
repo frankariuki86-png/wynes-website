@@ -39,7 +39,7 @@ function RoutedApp() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AnimatePresence mode="wait">
         <RoutedApp />
       </AnimatePresence>

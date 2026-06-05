@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, FileText, PhoneCall } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import Seo from '../components/Seo';
@@ -92,7 +93,7 @@ export default function AdmissionsPage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a href={`tel:${siteInfo.phoneDigits}`} className="btn-primary"><PhoneCall className="h-4 w-4" />Call Now</a>
-            <a href="/contact" className="btn-secondary">Go to Contact</a>
+            <Link to="/contact" className="btn-secondary">Go to Contact</Link>
           </div>
         </div>
       </section>

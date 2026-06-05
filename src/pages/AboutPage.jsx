@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2, GraduationCap, Target } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import Seo from '../components/Seo';
@@ -15,8 +16,8 @@ export default function AboutPage() {
         subtitle="WynesTTI serves students who want professional skills, strong mentorship and training that translates into opportunity."
         image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly1.jpeg`}
         actions={[
-          <a key="apply" href="/admissions" className="btn-primary">Apply Now</a>,
-          <a key="contact" href="/contact" className="btn-secondary">Contact Us</a>,
+          <Link key="apply" to="/admissions" className="btn-primary">Apply Now</Link>,
+          <Link key="contact" to="/contact" className="btn-secondary">Contact Us</Link>,
         ]}
       />
 
