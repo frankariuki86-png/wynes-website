@@ -34,7 +34,7 @@ export default function ContactPage() {
         kicker="Contact"
         title="Speak to WynesTTI today"
         subtitle="Use the form, phone, email or WhatsApp to get admissions support and course guidance."
-        image="/wynes%20photos/gallerly6.jpeg"
+        image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly6.jpeg`}
       />
 
       <section className="bg-white py-20 lg:py-28">

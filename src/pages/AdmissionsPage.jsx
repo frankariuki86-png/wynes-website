@@ -13,7 +13,7 @@ export default function AdmissionsPage() {
         kicker="Admissions"
         title="Start your application with a simple process"
         subtitle="Use the steps below to begin your journey at WynesTTI and prepare the documents required for registration."
-        image="/wynes%20photos/gallerly5.jpeg"
+        image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly5.jpeg`}
         actions={[
           <a key="call" href={`tel:${siteInfo.phoneDigits}`} className="btn-primary">Call Admissions</a>,
           <a key="whatsapp" href={`https://wa.me/${siteInfo.whatsapp}`} className="btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>,

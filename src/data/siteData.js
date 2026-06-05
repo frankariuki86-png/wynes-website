@@ -22,10 +22,13 @@ export const navigationItems = [
   { label: 'Contact', to: '/contact' },
 ];
 
+const photoBase = `${import.meta.env.BASE_URL}wynes%20photos`;
+const photoUrl = (fileName) => `${photoBase}/${fileName}`;
+
 export const heroSlides = [
-  '/wynes%20photos/gallery.jpeg',
-  '/wynes%20photos/gallerly1.jpeg',
-  '/wynes%20photos/gallerly2.jpeg',
+  photoUrl('gallery.jpeg'),
+  photoUrl('gallerly1.jpeg'),
+  photoUrl('gallerly2.jpeg'),
 ];
 
 export const aboutPoints = [
@@ -39,14 +42,14 @@ export const courses = [
     title: 'Beauty',
     category: 'Beauty',
     duration: '6-12 months',
-    image: '/wynes%20photos/gallerly3.jpeg',
+    image: photoUrl('gallerly3.jpeg'),
     description: 'Comprehensive beauty and cosmetology training covering hair dressing, beauty therapy, fashion and professional salon services.',
   },
   {
     title: 'ICT',
     category: 'ICT',
     duration: '4-12 months',
-    image: '/wynes%20photos/gallerly4.jpeg',
+    image: photoUrl('gallerly4.jpeg'),
     description: 'Practical ICT programs including computer packages, basic web design and maintenance focused on employability.',
   },
 ];
@@ -86,43 +89,43 @@ export const stats = [
 ];
 
 export const galleryImages = [
-  { src: '/wynes%20photos/gallerly1.jpeg', alt: 'Campus life' },
-  { src: '/wynes%20photos/gallerly2.jpeg', alt: 'Training lab' },
-  { src: '/wynes%20photos/gallerly3.jpeg', alt: 'Beauty and cosmetology training' },
-  { src: '/wynes%20photos/gallerly4.jpeg', alt: 'Practical workshop' },
-  { src: '/wynes%20photos/gallerly5.jpeg', alt: 'Student projects' },
-  { src: '/wynes%20photos/gallerly6.jpeg', alt: 'Classroom' },
+  { src: photoUrl('gallerly1.jpeg'), alt: 'Campus life' },
+  { src: photoUrl('gallerly2.jpeg'), alt: 'Training lab' },
+  { src: photoUrl('gallerly3.jpeg'), alt: 'Beauty and cosmetology training' },
+  { src: photoUrl('gallerly4.jpeg'), alt: 'Practical workshop' },
+  { src: photoUrl('gallerly5.jpeg'), alt: 'Student projects' },
+  { src: photoUrl('gallerly6.jpeg'), alt: 'Classroom' },
 ];
 
 export const testimonials = [
   {
     name: 'Amina J.',
     course: 'Beauty Therapy',
-    photo: '/wynes%20photos/testimonial.jpeg',
+    photo: photoUrl('testimonial.jpeg'),
     quote: 'The environment feels professional and welcoming, and the training is very practical.',
   },
   {
     name: 'Grace N.',
     course: 'Beauty',
-    photo: '/wynes%20photos/testimonial1.jpeg',
+    photo: photoUrl('testimonial1.jpeg'),
     quote: 'I gained real salon confidence, and every class felt hands-on and career-focused.',
   },
   {
     name: 'Faith M.',
     course: 'Beauty',
-    photo: '/wynes%20photos/testimonial2.jpeg',
+    photo: photoUrl('testimonial2.jpeg'),
     quote: 'WynesTTI helped me build discipline, practical beauty skills and a clear path forward.',
   },
   {
     name: 'Brian K.',
     course: 'ICT',
-    photo: '/wynes%20photos/testimonial3.jpeg',
+    photo: photoUrl('testimonial3.jpeg'),
     quote: 'The ICT training is practical and the support made it easy to learn at a professional pace.',
   },
   {
     name: 'Mercy A.',
     course: 'ICT',
-    photo: '/wynes%20photos/testimonial.jpeg',
+    photo: photoUrl('testimonial.jpeg'),
     quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
 ];

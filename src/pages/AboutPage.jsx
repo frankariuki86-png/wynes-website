@@ -13,7 +13,7 @@ export default function AboutPage() {
         kicker="About Us"
         title="A college built on practical education and student growth"
         subtitle="WynesTTI serves students who want professional skills, strong mentorship and training that translates into opportunity."
-        image="/wynes%20photos/gallerly1.jpeg"
+        image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly1.jpeg`}
         actions={[
           <a key="apply" href="/admissions" className="btn-primary">Apply Now</a>,
           <a key="contact" href="/contact" className="btn-secondary">Contact Us</a>,
@@ -26,7 +26,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            src="/wynes%20photos/gallerly2.jpeg"
+            src={`${import.meta.env.BASE_URL}wynes%20photos/gallerly2.jpeg`}
             alt="WynesTTI campus"
             className="h-[34rem] w-full rounded-[2rem] object-cover shadow-premium"
           />

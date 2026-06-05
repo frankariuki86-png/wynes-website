@@ -15,7 +15,7 @@ export default function GalleryPage() {
         kicker="Student Life"
         title="Campus energy, practical work and real student moments"
         subtitle="A visual tour of the classroom, workshop and celebration moments that shape the WynesTTI experience."
-        image="/wynes%20photos/gallerly7.jpeg"
+        image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly7.jpeg`}
       />
       <section className="bg-slate-50 py-20 lg:py-28">
         <div className="section-shell">

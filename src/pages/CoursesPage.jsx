@@ -22,7 +22,7 @@ export default function CoursesPage() {
         kicker="Courses"
         title="Practical programs built for job readiness"
         subtitle="Browse courses designed to give students the hands-on skills needed for employment, self-employment and industry competence."
-        image="/wynes%20photos/gallerly4.jpeg"
+        image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly4.jpeg`}
         actions={[
           <a key="apply" href="/admissions" className="btn-primary">Apply Now</a>,
           <a key="contact" href="/contact" className="btn-secondary">Ask About a Course</a>,

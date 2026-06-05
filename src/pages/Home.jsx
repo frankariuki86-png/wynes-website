@@ -115,7 +115,7 @@ function AboutSection() {
           <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="relative">
           <div className="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-gold-300/20 blur-2xl" />
             <img
-              src="/wynes%20photos/gallerly1.jpeg"
+              src={`${import.meta.env.BASE_URL}wynes%20photos/gallerly1.jpeg`}
               alt="WynesTTI students and leadership"
             className="h-[34rem] w-full rounded-[2rem] object-cover shadow-premium"
           />

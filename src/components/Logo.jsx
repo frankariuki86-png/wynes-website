@@ -4,7 +4,7 @@ export default function Logo({ dark = false, compact = false }) {
   return (
     <Link to="/" className="flex items-center gap-3">
       <img
-        src="/wynes%20photos/gallery.jpeg"
+        src={`${import.meta.env.BASE_URL}wynes%20photos/gallery.jpeg`}
         alt="WynesTTI logo"
         className="h-11 w-11 rounded-2xl object-cover shadow-lg"
       />
