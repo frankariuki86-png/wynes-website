@@ -98,19 +98,19 @@ export const galleryImages = [
 
 export const testimonials = [
   {
-    name: 'Mercy A.',
+    name: 'Sharon Odhiambo',
     course: 'ICT',
     photo: photoUrl('testimonial3.jpeg'),
     quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
   {
-    name: 'Grace N.',
+    name: 'Claris Nyokabi',
     course: 'Beauty',
     photo: photoUrl('testimonial4.jpeg'),
     quote: 'I gained real salon confidence, and every class felt hands-on and career-focused.',
   },
   {
-    name: 'Faith M.',
+    name: 'Sharon Wanjiru',
     course: 'Beauty',
     photo: photoUrl('testimonial2.jpeg'),
     quote: 'WynesTTI helped me build discipline, practical beauty skills and a clear path forward.',

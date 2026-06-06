@@ -12,6 +12,30 @@ const defaultForm = {
   message: '',
 };
 
+function buildMailtoLink(values) {
+  const subject = `New enquiry from ${values.fullName}${values.course ? ` - ${values.course}` : ''}`;
+  const body = [
+    `Full name: ${values.fullName}`,
+    `Email: ${values.email}`,
+    `Phone: ${values.phone || 'Not provided'}`,
+    `Course interested in: ${values.course || 'Not provided'}`,
+    '',
+    'Message:',
+    values.message,
+  ].join('\n');
+
+  const searchParams = new URLSearchParams({ subject, body });
+  return `mailto:${siteInfo.email}?${searchParams.toString()}`;
+}
+
+function openDraftEmail(values, message) {
+  window.location.href = buildMailtoLink(values);
+  return {
+    type: 'success',
+    message,
+  };
+}
+
 export default function ContactPage() {
   const [form, setForm] = useState(defaultForm);
   const [status, setStatus] = useState(null);
@@ -40,16 +64,34 @@ export default function ContactPage() {
       const payload = await response.json().catch(() => ({}));
 
       if (!response.ok) {
+        if (
+          payload?.message?.includes('GMAIL_USER') ||
+          payload?.message?.includes('GMAIL_APP_PASSWORD') ||
+          payload?.message?.includes('Mail settings are missing')
+        ) {
+          setStatus(
+            openDraftEmail(
+              form,
+              'Server mail settings are missing, so your mail app has been opened with a prefilled draft.',
+            ),
+          );
+          return;
+        }
+
         throw new Error(payload?.message || 'Unable to send your enquiry right now.');
       }
 
       setStatus({ type: 'success', message: 'Thank you. Your enquiry has been sent to admissions.' });
       setForm(defaultForm);
     } catch (error) {
-      setStatus({
-        type: 'error',
-        message: error instanceof Error ? error.message : 'Unable to send your enquiry right now.',
-      });
+      setStatus(
+        openDraftEmail(
+          form,
+          error instanceof Error && error.message.includes('Mail settings are missing')
+            ? 'Server mail settings are missing, so your mail app has been opened with a prefilled draft.'
+            : 'Your mail app has been opened with a prefilled draft.',
+        ),
+      );
     } finally {
       setIsSending(false);
     }
