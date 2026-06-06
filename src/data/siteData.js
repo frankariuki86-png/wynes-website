@@ -106,7 +106,7 @@ export const testimonials = [
   {
     name: 'Grace N.',
     course: 'Beauty',
-    photo: photoUrl('testimonial1.jpeg'),
+    photo: photoUrl('testimonial4.jpeg'),
     quote: 'I gained real salon confidence, and every class felt hands-on and career-focused.',
   },
   {
