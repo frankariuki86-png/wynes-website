@@ -14,17 +14,45 @@ const defaultForm = {
 
 export default function ContactPage() {
   const [form, setForm] = useState(defaultForm);
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState(null);
+  const [isSending, setIsSending] = useState(false);
 
   const onChange = (event) => {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
   };
 
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
-    setSubmitted(true);
-    setForm(defaultForm);
+
+    setIsSending(true);
+    setStatus(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const payload = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(payload?.message || 'Unable to send your enquiry right now.');
+      }
+
+      setStatus({ type: 'success', message: 'Thank you. Your enquiry has been sent to admissions.' });
+      setForm(defaultForm);
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'Unable to send your enquiry right now.',
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -86,12 +114,20 @@ export default function ContactPage() {
               </div>
               <input name="course" value={form.course} onChange={onChange} placeholder="Course Interested In" className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:border-gold-400" />
               <textarea name="message" rows="6" required value={form.message} onChange={onChange} placeholder="Message" className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:border-gold-400" />
-              <button type="submit" className="btn-primary w-full">
+              <button type="submit" className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-70" disabled={isSending}>
                 <Send className="h-4 w-4" />
-                Send Message
+                {isSending ? 'Sending...' : 'Send Message'}
               </button>
             </form>
-            {submitted ? <p className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 text-sm text-emerald-700">Thank you. Your enquiry has been prepared for follow-up.</p> : null}
+            {status ? (
+              <p
+                className={`mt-4 rounded-2xl px-4 py-3 text-sm ${
+                  status.type === 'success' ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'
+                }`}
+              >
+                {status.message}
+              </p>
+            ) : null}
           </div>
         </div>
       </section>
