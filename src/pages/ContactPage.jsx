@@ -57,9 +57,13 @@ export default function ContactPage() {
             </div>
 
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-premium">
+              <div className="flex items-center gap-3 border-b border-slate-200 bg-slate-50 px-5 py-4 text-sm font-semibold text-slate-800">
+                <MapPin className="h-4 w-4 text-gold-500" />
+                Locate us on the map: {siteInfo.address}
+              </div>
               <iframe
                 title="WynesTTI location"
-                src="https://www.google.com/maps?q=Nakuru%20Kenya&output=embed"
+                src={`https://www.google.com/maps?q=${encodeURIComponent(siteInfo.address)}&output=embed`}
                 className="h-[24rem] w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

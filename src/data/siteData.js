@@ -100,7 +100,7 @@ export const testimonials = [
   {
     name: 'Mercy A.',
     course: 'ICT',
-    photo: photoUrl('testimonial.jpeg'),
+    photo: photoUrl('testimonial3.jpeg'),
     quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
   {
