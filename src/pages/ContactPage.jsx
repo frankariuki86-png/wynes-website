@@ -58,7 +58,11 @@ export default function ContactPage() {
 
             <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-premium">
               <div className="flex items-center gap-3 border-b border-slate-200 bg-slate-50 px-5 py-4 text-sm font-semibold text-slate-800">
-                <MapPin className="h-4 w-4 text-gold-500" />
+                <img
+                  src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png"
+                  alt="Location icon"
+                  className="h-5 w-5 object-contain"
+                />
                 Exact location: Nakuru East, Nakuru
               </div>
               <iframe

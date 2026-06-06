@@ -59,7 +59,15 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} Wynes Technical Training Institute. All rights reserved.
+        © {new Date().getFullYear()} Wynes Technical Training Institute. All rights reserved. Developed by{' '}
+        <a
+          href="https://bluepeak-tech-g56o-git-main-francis-projects-f7c3f8a7.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-gold-300 transition hover:text-gold-200"
+        >
+          Blupeak Solutions
+        </a>
       </div>
     </footer>
   );

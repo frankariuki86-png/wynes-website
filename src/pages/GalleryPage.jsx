@@ -14,7 +14,7 @@ export default function GalleryPage() {
       <PageHero
         kicker="Student Life"
         title="Campus energy, practical work and real student moments"
-        subtitle="A visual tour of the classroom, workshop and celebration moments that shape the WynesTTI experience."
+        subtitle="A visual tour of the classroom, workshop and students project moments that shape the WynesTTI experience."
         image={`${import.meta.env.BASE_URL}wynes%20photos/gallerly7.jpeg`}
       />
       <section className="bg-slate-50 py-20 lg:py-28">
