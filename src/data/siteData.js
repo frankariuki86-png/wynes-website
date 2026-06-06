@@ -89,20 +89,19 @@ export const stats = [
 ];
 
 export const galleryImages = [
-  { src: photoUrl('gallerly1.jpeg'), alt: 'Campus life' },
   { src: photoUrl('gallerly2.jpeg'), alt: 'Training lab' },
   { src: photoUrl('gallerly3.jpeg'), alt: 'Beauty and cosmetology training' },
   { src: photoUrl('gallerly4.jpeg'), alt: 'Practical workshop' },
   { src: photoUrl('gallerly5.jpeg'), alt: 'Student projects' },
-  { src: photoUrl('gallerly6.jpeg'), alt: 'Classroom' },
+  { src: photoUrl('gallerly7.jpeg'), alt: 'Celebration moment' },
 ];
 
 export const testimonials = [
   {
-    name: 'Amina J.',
-    course: 'Beauty Therapy',
+    name: 'Mercy A.',
+    course: 'ICT',
     photo: photoUrl('testimonial.jpeg'),
-    quote: 'The environment feels professional and welcoming, and the training is very practical.',
+    quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
   {
     name: 'Grace N.',
@@ -115,18 +114,6 @@ export const testimonials = [
     course: 'Beauty',
     photo: photoUrl('testimonial2.jpeg'),
     quote: 'WynesTTI helped me build discipline, practical beauty skills and a clear path forward.',
-  },
-  {
-    name: 'Brian K.',
-    course: 'ICT',
-    photo: photoUrl('testimonial3.jpeg'),
-    quote: 'The ICT training is practical and the support made it easy to learn at a professional pace.',
-  },
-  {
-    name: 'Mercy A.',
-    course: 'ICT',
-    photo: photoUrl('testimonial.jpeg'),
-    quote: 'I now understand the basics of computer packages and feel ready for more advanced learning.',
   },
 ];
 
