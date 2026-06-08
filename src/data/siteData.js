@@ -49,7 +49,7 @@ export const courses = [
     title: 'ICT',
     category: 'ICT',
     duration: '4-12 months',
-    image: photoUrl('gallerly4.jpeg'),
+    image: photoUrl('ict.jpeg'),
     description: 'Practical ICT programs including computer packages, basic web design and maintenance focused on employability.',
   },
 ];
