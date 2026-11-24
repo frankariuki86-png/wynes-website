@@ -161,7 +161,7 @@ function CoursesPreview() {
         <SectionHeading
           kicker="Courses"
           title="Professional courses designed for career readiness"
-          description="Explore practical programs across technical, ICT, beauty and hospitality disciplines. Every course is built to support real-world competence and confidence."
+          description="Explore practical programs across ICT, beauty and care giving. Every course is built to support real-world competence and confidence."
           center
         />
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -353,7 +353,7 @@ function ContactPreview() {
 export default function Home() {
   const pageDescription = useMemo(
     () =>
-      'Wynes Technical Training Institute (WynesTTI) is a modern, practical and premium learning destination in Nakuru, Kenya for technical, ICT, beauty and hospitality training.',
+      'Wynes Technical Training Institute (WynesTTI) is a modern, practical learning destination in Nakuru, Kenya for ICT, beauty and care giving training.',
     [],
   );
 

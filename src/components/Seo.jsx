@@ -29,7 +29,7 @@ export default function Seo({ title, description }) {
     document.title = pageTitle;
 
     upsertMeta('name', 'description', pageDescription);
-    upsertMeta('name', 'keywords', 'Wynes Technical Training Institute, WynesTTI, Nakuru college, technical training, beauty courses, ICT courses');
+    upsertMeta('name', 'keywords', 'Wynes Technical Training Institute, WynesTTI, Nakuru college, technical training, beauty courses, ICT courses, care giving course');
     upsertMeta('property', 'og:title', pageTitle);
     upsertMeta('property', 'og:description', pageDescription);
     upsertMeta('property', 'og:type', 'website');

@@ -45,6 +45,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-slate-300">
             <li>ICT Courses</li>
             <li>Beauty Courses</li>
+            <li>Care Giving</li>
           </ul>
         </div>
 

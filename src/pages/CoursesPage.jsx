@@ -6,7 +6,7 @@ import CourseCard from '../components/CourseCard';
 import Seo from '../components/Seo';
 import { courses } from '../data/siteData';
 
-const filters = ['All', 'ICT', 'Beauty'];
+const filters = ['All', 'ICT', 'Beauty', 'Care Giving'];
 
 export default function CoursesPage() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -18,7 +18,7 @@ export default function CoursesPage() {
 
   return (
     <>
-      <Seo title="Courses at WynesTTI" description="Explore the practical courses offered by Wynes Technical Training Institute across technical, ICT, beauty and hospitality fields." />
+      <Seo title="Courses at WynesTTI" description="Explore practical courses at Wynes Technical Training Institute, including Beauty, ICT and Care Giving." />
       <PageHero
         kicker="Courses"
         title="Practical programs built for job readiness"

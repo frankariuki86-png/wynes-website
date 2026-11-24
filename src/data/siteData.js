@@ -52,6 +52,13 @@ export const courses = [
     image: photoUrl('ict.jpeg'),
     description: 'Practical ICT programs including computer packages, basic web design and maintenance focused on employability.',
   },
+  {
+    title: 'Care Giving',
+    category: 'Care Giving',
+    duration: '6-12 months',
+    image: photoUrl('gallerly4.jpeg'),
+    description: 'Practical caregiver training covering compassionate support, personal care, safety, first aid awareness and assistance with daily living.',
+  },
 ];
 
 export const whyChoose = [
@@ -83,9 +90,9 @@ export const whyChoose = [
 
 export const stats = [
   { label: 'Students Guided', value: 850 },
-  { label: 'Courses Offered', value: 2 },
+  { label: 'Courses Offered', value: 3 },
   { label: 'Years of Excellence', value: 8 },
-  { label: 'Career Pathways', value: 2 },
+  { label: 'Career Pathways', value: 3 },
 ];
 
 export const galleryImages = [
