@@ -119,7 +119,6 @@ export const galleryImages = [
   { src: photoUrl('gallery-20261123-wa0301.jpg'), alt: 'Student practising hair care' },
   { src: photoUrl('gallery-20261123-wa0305.jpg'), alt: 'Student practising makeup application' },
   { src: photoUrl('gallery-20261123-wa0314.jpg'), alt: 'Student practising facial treatment' },
-  { src: photoUrl('gallery-20261123-wa0317.jpg'), alt: 'Wynes Technical Training Institute entrance' },
   { src: photoUrl('gallery-20261123-wa0319.jpg'), alt: 'Students practising hair braiding' },
   { src: photoUrl('gallery-20261123-wa0321.jpg'), alt: 'Student practising a hairstyle' },
   { src: photoUrl('gallery-20261123-wa0323.jpg'), alt: 'WynesTTI makeup course poster' },
