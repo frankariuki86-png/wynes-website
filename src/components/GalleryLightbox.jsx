@@ -27,7 +27,11 @@ export default function GalleryLightbox({ item, onClose }) {
             >
               <X className="h-5 w-5" />
             </button>
-            <img src={item.src} alt={item.alt} className="h-[55dvh] w-full object-cover sm:h-[70dvh]" />
+            <img
+              src={item.src}
+              alt={item.alt}
+              className="h-[55dvh] w-full bg-slate-950 object-contain sm:h-[70dvh]"
+            />
             <div className="p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-gold-500">Student Life</p>
               <h3 className="mt-2 text-2xl font-bold text-slate-950">{item.alt}</h3>
