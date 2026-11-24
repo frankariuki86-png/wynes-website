@@ -4,6 +4,7 @@ import { ArrowRight, Award, BookOpen, CheckCircle2, GraduationCap, MapPin, Phone
 import { Link } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
 import Counter from '../components/Counter';
+import GalleryCarousel from '../components/GalleryCarousel';
 import GalleryLightbox from '../components/GalleryLightbox';
 import SectionHeading from '../components/SectionHeading';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
@@ -243,21 +244,7 @@ function GallerySection() {
           description="From workshops to graduation moments, the gallery reflects the active learning culture and welcoming atmosphere at WynesTTI."
           center
         />
-        <div className="mt-14 columns-1 gap-5 md:columns-2 xl:columns-3 [column-fill:_balance]">
-          {galleryImages.map((item) => (
-            <button
-              key={item.alt}
-              type="button"
-              onClick={() => setActiveItem(item)}
-              className="group mb-5 block w-full overflow-hidden rounded-3xl bg-white text-left shadow-lg shadow-slate-200/70"
-            >
-              <img src={item.src} alt={item.alt} className="h-auto w-full object-cover transition duration-500 group-hover:scale-110" />
-              <div className="p-4">
-                <p className="text-sm font-semibold text-slate-950">{item.alt}</p>
-              </div>
-            </button>
-          ))}
-        </div>
+        <GalleryCarousel images={galleryImages} onSelect={setActiveItem} />
         <GalleryLightbox item={activeItem} onClose={() => setActiveItem(null)} />
       </div>
     </section>
